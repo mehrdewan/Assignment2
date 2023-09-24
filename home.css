@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+/* Reset default margin and padding on all elements */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-decoration: none; 
+
+}
+
+body {
+        display: flex;
+        flex-direction: column;
+}
+
+
+.logo {
+        width: 100px;
+        height: auto;
+        position: absolute;
+        top: 0px; 
+        left: 10px;
+        order: 1;
+        display: flex;
+        margin-right: 0; /* Remove margin */
+}
+
+.logo img {
+        max-height: 100px; /* Set a maximum height for the logo image */
+        position: fixed;
+}
+
+nav {
+        color: white;
+        height: 80px;
+        background-color: rgb(25, 54, 90);
+        display: right;
+        justify-content: space-between;
+        align-items: right;
+        padding: 0rem calc((100vw - 1300px) / 2);
+        text-align: right;
+        padding-top: 30px; /* Adjust the top padding as needed */
+}
+
+nav a{
+        padding-top: 10px;
+        color: white;
+        padding: 0 1.5rem;
+        margin: 10px 0; /* Add some vertical spacing between the links */
+}
+
+/* Apply styles to the banner */
+.banner {
+        width: 100%; 
+        height: auto;
+        overflow: hidden;
+}
+    
+.banner img {
+        width: 100%; 
+        height: auto; 
+        display: block; /* Remove any default inline styles on the image */
+}
+
+.header {
+        position: absolute;
+        top: 35%; /* Position the website name in the vertical center of the banner */
+        left: 20%; /* Position the website name in the horizontal center of the banner */
+        transform: translate(-50%, -50%); 
+        color: white; /* Text color */
+        z-index: 1;
+        font-size: 250x;
+        text-align: center;
+}
+
+.header h1 {
+        position: relative;
+        font-size: 50px; 
+        font-weight: bold; /* Make the text bold */
+        color: white;
+        padding-top: 60px;
+        padding-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+}
+
+.header p {
+        font-size: 20px; 
+        font-style: italic;
+        color: white;
+        padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+        .banner {
+                position: relative; 
+        }
+
+        /* .header h1 {
+                position: relative;
+                font-size: 200px; 
+        }  */
+}
+
+button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        border: none;
+        color: white;
+        background: rgb(22, 22, 80);
+        cursor: pointer;
+        border-radius: 30px;
+}
+
+button:hover {
+        background: white;
+        color: black;
+
+}
+
+.Mission {
+        font-size: 20px;
+        text-align: center;
+        color: rgb(25, 54, 90);
+}
+
+.Mission p{
+        font-size: 30px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: rgb(25, 54, 90);
+}
+
+hr {
+        border: 10px solid rgb(25, 54, 90); /* Set the line color and style */
+        margin: 20px 0; /* Add margin for spacing above and below the line */
+}
+
+.Work {
+        font-size: 20px;
+        color:  rgb(25, 54, 90);
+        text-align: center;
+
+}
+
+.Work p{
+        font-size: 30px;
+        color:  rgb(25, 54, 90);
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+
+}
+
+.image {
+        width: 350px;
+        box-sizing: border-box;
+        padding-left: 80px;
+        padding-right: 40px;
+        text-align: center;
+        
+}
+
+.images {
+        /* Allow 3 images next to each other */
+        display:flex;
+        flex-wrap: wrap;
+        /* Horizontally center images */
+        justify-content: center;
+        align-items: flex-start;
+}
+
+.Caption {
+        font-size: 20px;
+        color:rgb(25, 54, 90);
+        text-align: center;
+        padding-top: 270px;
+}
+
+footer {
+        /* position: fixed; Fixed position to keep it at the bottom */
+        bottom: 0;
+        width: 100%;
+        background-color:  rgb(25, 54, 90); 
+        color: #fff;
+        padding: 40px; 
+        text-align: left; 
+        z-index: 999;
+}
