@@ -13,23 +13,29 @@
 body {
         display: flex;
         flex-direction: column;
+        background-color: rgb(203, 224, 250);
 }
 
 
 .logo {
-        width: 100px;
-        height: auto;
         position: absolute;
-        top: 0px; 
+        width: 130px;
+        height: auto;
+        top: -20px; 
         left: 10px;
-        order: 1;
-        display: flex;
-        margin-right: 0; /* Remove margin */
+        z-index: 1000;
+        padding-top: 10px;
 }
 
 .logo img {
         max-height: 100px; /* Set a maximum height for the logo image */
-        position: fixed;
+        width: 130px;
+        height: auto;
+        order: 1;
+        display: block;
+        position: absolute;
+        top: 9px;
+        z-index: 10;
 }
 
 nav {
@@ -92,15 +98,183 @@ nav a{
         padding-bottom: 20px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
         .banner {
                 position: relative; 
         }
 
-        /* .header h1 {
-                position: relative;
-                font-size: 200px; 
-        }  */
+        .header h1 {
+                font-size: 47px; 
+        }
+
+        .header p {
+                font-size: 19px;
+        }
+
+        button {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                border: none;
+                border-radius: 28px;
+        }
+}
+
+@media screen and (max-width: 1153px) {
+        .banner {
+                position: relative; 
+        }
+
+        .header h1 {
+                font-size: 45px; 
+        }
+
+        .header p {
+                font-size: 17px;
+        }    
+}
+
+@media screen and (max-width: 1098px) {
+        .banner {
+                position: relative; 
+        }
+
+        .header h1 {
+                font-size: 42px; 
+        }
+
+        .header p {
+                font-size: 17px;
+        }    
+}
+
+@media screen and (max-width: 1080px) {
+        .banner {
+                position: relative; 
+        }
+
+        .header h1 {
+                font-size: 40px; 
+        }
+
+        .header p {
+                font-size: 14px;
+        }    
+}
+
+@media screen and (max-width: 980px) {
+        .banner {
+                position: relative; 
+        }
+
+        .header h1 {
+                font-size: 37px; 
+        }
+
+        .header p {
+                font-size: 14px;
+        }    
+}
+
+@media screen and (max-width: 906px) {
+        .banner {
+                position: relative; 
+        }
+
+        .header h1 {
+                font-size: 34px; 
+        }
+
+        .header p {
+                font-size: 12px;
+        }
+
+        button {
+                padding: 1rem 1rem;
+                font-size: 0rem;
+                border: none;
+                border-radius: 10px;
+        }
+        
+}
+
+@media screen and (max-width: 934px) {
+        .banner {
+                position: relative; 
+        }
+
+        .header h1 {
+                font-size: 32px; 
+        }
+
+        .header p {
+                font-size: 12px;
+        }
+        
+}
+
+
+@media screen and (max-width: 780px) {
+        .banner {
+                position: relative; 
+        }
+
+        .header h1 {
+                font-size: 28px; 
+        }
+
+        .header p {
+                font-size: 10px;
+        }    
+}
+
+@media screen and (max-width: 680px) {
+        .banner {
+                position: relative; 
+        }
+
+        .header h1 {
+                font-size: 25px; 
+        }
+
+        .header p {
+                font-size: 10px;
+        }      
+}
+
+@media screen and (max-width: 620px) {
+        .banner {
+                position: relative; 
+        }
+
+        .header h1 {
+                font-size: 22px; 
+        }
+
+        .header p {
+                font-size: 9px;
+        }      
+}
+
+
+@media screen and (max-width: 580px) {
+        .banner {
+                position: relative; 
+        }
+
+        .header h1 {
+                font-size: 20px; 
+        }
+
+        .header p {
+                font-size: 8px;
+        }   
+        
+        button {
+                padding: 0rem 0rem;
+                font-size: 0rem;
+                border: none;
+                border-radius: 5px;
+        }
 }
 
 button {
@@ -180,12 +354,10 @@ hr {
 }
 
 footer {
-        /* position: fixed; Fixed position to keep it at the bottom */
         bottom: 0;
         width: 100%;
         background-color:  rgb(25, 54, 90); 
         color: #fff;
         padding: 40px; 
         text-align: left; 
-        z-index: 999;
 }
